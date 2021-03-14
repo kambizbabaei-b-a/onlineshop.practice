@@ -77,3 +77,18 @@ table {
 .no_dec_link:hover{
 	text-decoration: none;
 }
+
+.display-to-md-none{
+	display: none;
+}
+
+@media (min-width:48em) {
+	.display-to-md-none{
+		display: block;
+	}
+}
+
+footer{
+	border-top: 1px solid rgb(44, 44, 51);
+}
+

@@ -69,3 +69,11 @@ table {
 .rav-link:hover{
     text-decoration: none;
 }
+
+.no_dec_link{
+	text-decoration: none;
+}
+
+.no_dec_link:hover{
+	text-decoration: none;
+}

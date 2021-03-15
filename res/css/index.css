@@ -45,6 +45,11 @@ table {
 
 /******** css reset end *******/
 
+body{
+	width: 100%;
+	box-sizing: border-box;
+}
+
 .text-logo{
     
     font-family: 'Raleway', sans-serif;
@@ -94,8 +99,9 @@ footer{
 
 .content-block-25{
 	flex:25%;
+	
 	border: 1px solid red;
-	max-width: 25%;
+	min-width: 15em;
 }
 
 .fit-content{
@@ -106,4 +112,3 @@ footer{
 	display: flex;
 	flex-wrap: wrap;
 }
-

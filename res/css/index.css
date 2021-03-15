@@ -47,7 +47,7 @@ table {
 
 .text-logo{
     
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
 }
 
 .navlist{
@@ -90,5 +90,20 @@ table {
 
 footer{
 	border-top: 1px solid rgb(44, 44, 51);
+}
+
+.content-block-25{
+	flex:25%;
+	border: 1px solid red;
+	max-width: 25%;
+}
+
+.fit-content{
+	max-width: 100%;
+	height: auto;
+}
+.content-section{
+	display: flex;
+	flex-wrap: wrap;
 }
 

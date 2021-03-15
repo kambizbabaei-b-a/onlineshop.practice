@@ -52,18 +52,22 @@ footer{
 	border-top: 1px solid rgb(44, 44, 51);
 }
 
-/* .content-block-25{
+.content-block-25{
 	flex:25%;
 	
 	border: 1px solid red;
 	min-width: 15em;
-} */
+} 
 
-/* .fit-content{
+ .fit-content{
 	max-width: 100%;
 	height: auto;
-} */
-/* .content-section{
+}
+ .content-section{
 	display: flex;
 	flex-wrap: wrap;
-} */
+}
+
+.row{
+	margin: 0px;
+}

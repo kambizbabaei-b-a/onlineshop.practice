@@ -54,18 +54,20 @@ footer{
 
 .content-block-25{
 	flex:25%;
-	
 	border: 1px solid red;
 	min-width: 15em;
 } 
 
- .fit-content{
+.fit-content{
 	max-width: 100%;
 	height: auto;
 }
  .content-section{
 	display: flex;
 	flex-wrap: wrap;
+	text-align: center;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 .row{

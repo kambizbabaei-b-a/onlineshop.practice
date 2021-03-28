@@ -7,8 +7,7 @@
     <title>Online Shop</title>
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      href="./res/bootstrap/bootstrap.min.css"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="res/css/index.css" />
@@ -72,29 +71,16 @@
       </nav>
     </header>
     <main class="">
-      <section class="content-section">
+      <section class="row">
         <span class="category">shop by category</span>
       </section>
-      <section class="content-section">
-        <div class="content-block-25">
-          <img src="./res/img/laptops.jpg" alt="" class="fit-content" />
+      <div class="row center-content">
+        <input type="button" class="button btn" id="category-next" value="&#60;" />
+        <div class="container  no-padding">
+          <section class="row no-padding" id="category-section"></section>
         </div>
-        <div class="content-block-25">
-          <img src="./res/img/home_bedding.jpg" alt="" class="fit-content" />
-        </div>
-        <div class="content-block-25">
-          <img src="./res/img/strip_lighting.jpg" alt="" class="fit-content" />
-        </div>
-        <div class="content-block-25">
-          <img src="./res/img/groceries.jpg" alt="" class="fit-content" />
-        </div>
-        <div class="content-block-25">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
-          exercitationem doloribus deserunt quidem iste, commodi nesciunt
-          corrupti reiciendis reprehenderit voluptatum labore ratione provident
-          possimus quas accusantium nemo quo sed minima.
-        </div>
-      </section>
+        <input type="button" class="button btn" id="category-prev" value="&#62;" />
+      </div>
     </main>
     <footer class="bg-dark">
       <div class="row">
@@ -167,6 +153,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="./res/js/index.js"></script>
     <!-- js end -->
   </body>
 </html>

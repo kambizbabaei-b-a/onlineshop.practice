@@ -1,46 +1,40 @@
-
-
-body{
-	/* width: 100%; */
-	box-sizing: border-box;
+body {
+  /* width: 100%; */
+  box-sizing: border-box;
 }
 
-.text-logo{
-    
-    font-family: 'Raleway', sans-serif;
+.text-logo {
+  font-family: "Raleway", sans-serif;
 }
 
-.navlist{
-    direction: rtl;
-    
+.navlist {
+  direction: rtl;
 }
 
-.navitemlist{
-    
+.navitemlist {
 }
-.navbar-item{
-    text-decoration: none;
-}
-
-.rav-link{
-    font-family: 'Ubuntu', sans-serif;
+.navbar-item {
+  text-decoration: none;
 }
 
-.rav-link:hover{
-    text-decoration: none;
+.rav-link {
+  font-family: "Ubuntu", sans-serif;
 }
 
-.no_dec_link{
-	text-decoration: none;
+.rav-link:hover {
+  text-decoration: none;
 }
 
-.no_dec_link:hover{
-	text-decoration: none;
+.no_dec_link {
+  text-decoration: none;
 }
 
+.no_dec_link:hover {
+  text-decoration: none;
+}
 
-footer{
-	border-top: 1px solid rgb(44, 44, 51);
+footer {
+  border-top: 1px solid rgb(44, 44, 51);
 }
 /* .display-to-md-none{
 	display: none;
@@ -68,26 +62,30 @@ footer{
 	justify-content: space-evenly; 
 }*/
 
-.row{
-	margin: 0px;
-	padding: 1px;
+.row {
+  margin: 0px;
+  padding: 1px;
 }
 
-.col-3{
-	margin: 0px;
-	padding: 0px;
+.col-3 {
+  margin: 0px;
+  padding: 0px;
 }
 
-.fit-content{
-	max-width: 100%;
-	height: auto;
+.fit-content {
+  max-width: 100%;
+  height: auto;
 }
 
-.no-padding{
-	padding: 0px;
-	margin: 0px;
+.no-padding {
+  padding: 0px;
+  margin: 0px;
 }
 
-.center-content{
-	justify-content: center;
+.center-content {
+  justify-content: center;
+}
+
+.cat-container {
+  max-width: 80vw;
 }

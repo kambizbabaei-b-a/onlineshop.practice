@@ -5,10 +5,10 @@ var sTH = function (str) {
 };
 
 
-const cat_1 = sTH('<div class="col-4 no-padding" id="cat-item-1"><img src="./res/img/laptops.jpg" alt="" class="fit-content" /></div>');
-const cat_2 = sTH('<div class="col-4 no-padding"id="cat-item-2"><img src="./res/img/home_bedding.jpg"alt=""class="fit-content"/></div>');
-const cat_3 = sTH('<div class="col-4 no-padding" id="cat-item-3" > <img src="./res/img/strip_lighting.jpg" alt="" class="fit-content"/></div>');
-const cat_4 = sTH('<div class="col-4 no-padding" id = "cat-item-3"><img src="./res/img/groceries.jpg" alt="" class="fit-content" /></div>');
+const cat_1 = sTH('<div class="col-4 no-padding" id="cat-item-1"><img src="./res/img/laptops.jpg"        alt="" class="fit-content"/></div>');
+const cat_2 = sTH('<div class="col-4 no-padding" id="cat-item-2"><img src="./res/img/home_bedding.jpg"   alt="" class="fit-content"/></div>');
+const cat_3 = sTH('<div class="col-4 no-padding" id="cat-item-3"><img src="./res/img/strip_lighting.jpg" alt="" class="fit-content"/></div>');
+const cat_4 = sTH('<div class="col-4 no-padding" id="cat-item-4"><img src="./res/img/groceries.jpg"      alt="" class="fit-content"/></div>');
 const cat_section = document.getElementById("category-section");
 cat_section.appendChild(cat_1);
 cat_section.appendChild(cat_2);
@@ -18,9 +18,10 @@ var cat = document.getElementById("category-section");
 function cat_next_onclick() {
     function removeChilds() {
         for (i = 0; i < cat.childNodes.length; i++) {
-            cat.removeChild(cat.firstChild)
-        }
+            cat.removeChild(cat.firstChild);
+        };
     }
+
 
     switch (cat.firstElementChild) {
         case cat_1:
@@ -56,5 +57,47 @@ function cat_next_onclick() {
             break;
     };
 };
-const cat_btn_next = document.getElementById("category-next")
+
+function cat_prev_onclick() {
+    function removeChilds() {
+        for (i = 0; i <= cat.childNodes.length + 1; i++) {
+            cat.removeChild(cat.firstChild);
+        };
+    }
+    switch (cat.lastElementChild) {
+        case cat_1:
+            removeChilds()
+            cat.appendChild(cat_2);
+            cat.appendChild(cat_3);
+            cat.appendChild(cat_4);
+            break;
+        case cat_2:
+            removeChilds()
+            cat.appendChild(cat_3);
+            cat.appendChild(cat_4);
+            cat.appendChild(cat_1);
+
+            break;
+        case cat_3:
+            removeChilds()
+            cat.appendChild(cat_4);
+            cat.appendChild(cat_1);
+            cat.appendChild(cat_2);
+
+            break;
+        case cat_4:
+            removeChilds()
+            cat.appendChild(cat_1);
+            cat.appendChild(cat_2);
+            cat.appendChild(cat_3);
+            break;
+        default:
+            cat.appendChild(cat_3);
+            cat.appendChild(cat_2);
+            cat.appendChild(cat_1);
+    }
+}
+const cat_btn_next = document.getElementById("category-next");
+const cat_btn_prev = document.getElementById("category-prev")
 cat_btn_next.onclick = cat_next_onclick;
+cat_btn_prev.onclick = cat_prev_onclick;
